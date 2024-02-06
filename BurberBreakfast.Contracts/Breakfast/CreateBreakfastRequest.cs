@@ -1,4 +1,4 @@
-namespace BurberBreakfast.Contracts.BurberBreakfast;
+namespace BurberBreakfast.Contracts.Breakfast;
 
 public record CreateBreakfastRequest(
     string Name,
