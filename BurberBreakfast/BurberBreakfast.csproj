@@ -4,6 +4,10 @@
     <ProjectReference Include="..\BurberBreakfast.Contracts\BurberBreakfast.Contracts.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ErrorOr" Version="1.10.0" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>

@@ -1,10 +1,15 @@
 using BurberBreakfast.Models;
+using ErrorOr;
 
 namespace BurberBreakfast.Services;
 
 public interface IBreakfastService
 {
-    void CreateBreakfast(Breakfast breakfast);
+    ErrorOr<Created> CreateBreakfast(Breakfast breakfast);
 
-    Breakfast GetBreakfast(Guid id);
+    ErrorOr<Deleted> DeleteBreakfast(Guid id);
+
+    ErrorOr<Breakfast> GetBreakfast(Guid id);
+
+    ErrorOr<UpsertedBreakfast> UpsertBreakfast(Breakfast breakfast);
 }
